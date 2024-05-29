@@ -12,9 +12,6 @@
   {% assign title = post.title %}
 {% endif %}
 {% assign title = title | strip %} <!-- Trim whitespace -->
-{% if title == "Publications" %}
-  {% assign title = "Working papers" %}
-{% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
