@@ -248,6 +248,7 @@ defaults:
       path: ""
       type: publications
     values:
+      title: "Working Papers"
       layout: single
       author_profile: true
       share: false
