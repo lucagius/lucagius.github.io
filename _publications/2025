@@ -2,24 +2,17 @@
 title: "Are Female Inventors Geographically Constrained? Gender Differences in Team Collocation <br> <br> Coauthored with Mercedes Delgado"
 collection: publications
 permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: "The number of multi-location patents (i.e., team of U.S. co-inventors located in multiple
-cities) has increased sharply in the last 20 years in the U.S. economy, representing 50% of all team
-patents by 2020. We investigate whether the growing geographical dispersion of teams creates
-frictions that vary by gender. We hypothesize that female inventors are more geographically
-constrained than men (i.e., higher cost of temporary proximity by travelling), and these frictions
-might affect who female inventors collaborate with. We show that female inventors are more
-collocated (same-city) with the team of co-inventors than male inventors. This is the case for both
-new inventors (first patent) and experienced ones. The Female-versus-Male inventor gap in team
-collocation increases with age. Women are less collocated than men while having low likelihood
-of having children (age below 32), but women team collocation increases afterwards and become
-more collocated than men. In contrast, male inventors’ team collocation decreases continuously
-with age. We find preliminary evidence that the increase in gender gap collocation with age is
-driven by an earlier exit (stop patenting) of women who, early in their inventor career, worked in
-multi-location patents. Overall, these findings are consistent with women facing higher relative
-constrains later on in their careers when they might have more family obligations. Finally, the
-location of inventors in top technology clusters help reduce these constraints since the degree of
-team collocation is much higher for inventors in these clusters. Our findings offer important
-insights for the work-from-anywhere debate."
+excerpt: "We present a new, stylized fact: female inventors are more likely to be collocated with 
+their co-inventors compared to men. We interpret this correlation as suggestive evidence that women inventors face higher 
+geographical frictions, potentially due to family obligations. This is a concerning possibility, given that 50% of all team patents in 2020 was
+produced by multi-located teams, and is particularly relevant for the work-from-anywhere debate.
+In support of our interpretation, we find that the collocation gender gap exists for both new and 
+experienced inventors. The collocation gap increases with age: women are less collocated than men 
+when they are statistically less likely to have children (under 32), but become more collocated
+past this threshold. Men, instead, become consistently less collocated as they age.
+Preliminary evidence suggests that women who worked on multi-location patents early 
+in their careers stop patenting earlier. To conclude, the gap (and the gendered geographical frictions it might represent) is mitigated in top technology clusters
+where teams are typically more collocated."
 # date: 2024-02-17
 # venue: 'GitHub Journal of Bugs'
 # paperurl: 'http://academicpages.github.io/files/paper3.pdf'
