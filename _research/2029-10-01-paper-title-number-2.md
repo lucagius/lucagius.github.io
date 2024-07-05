@@ -1,5 +1,5 @@
 ---
-title: "Disagreeing about startup ideas: Evidence from venture competitions <br> <br> <span style='font-style: italic;'>R&R, Strategy Science</span>"
+title: "Disagreeing about startup ideas: Evidence from venture competitions <br> <br> <span style='font-weight: normal; font-style: italic;'>R&R, Strategy Science</span>"
 collection: publications
 permalink: /publication/disagreement-startups
 excerpt: 'The theory-based view of the firm emphasizes that entrepreneurs have polarizing beliefs – some
