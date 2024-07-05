@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Working Papers"
-permalink: /research/
+permalink: /teaching/
 author_profile: true
 ---
 
