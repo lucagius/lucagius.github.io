@@ -1,5 +1,5 @@
 ---
-title: "Commercializing Contrarian Ideas: Evidence from Artificial Intelligence Competitions"
+title: "Commercializing Contrarian Ideas: Evidence from Artificial Intelligence Competitions <br> <br> <span style='font-weight: normal; font-style: italic;'>Job Market Paper</span>"
 collection: "publications"
 excerpt: "Innovators with contrarian perspectives often struggle to commercialize their ideas due to skepticism. This study tests whether public demonstrations can pave the way for contrarian entrepreneurship. To do so, I analyze data from hundreds of academic competitions held between 2000 and 2022. These contests, which pit different methods against each other, help clarify the most effective approaches. My findings show that winners of these competitions are significantly more likely to found a startup soon after their victory compared to runners-up. Importantly, this effect is particularly pronounced for contrarian winners, defined as those using families of algorithms that lagged behind the state-of-the-art prior to the competition. This demonstrates that contrarians are much more likely to commercialize their idea after they publicly proved themselves."
 ---
