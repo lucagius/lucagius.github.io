@@ -1,20 +1,17 @@
 ---
-title: "Disagreeing about startup ideas: Evidence from venture competitions <br> <br> <span style='font-weight: normal; font-style: italic;'>Revise and Resubmit, Strategy Science</span>"
+title: "Disagreement Predicts Startup Success: Evidence from Venture Competitions <br> <br> <span style='font-weight: normal; font-style: italic;'>Revise and Resubmit, Strategy Science</span>"
 collection: publications
 permalink: /publication/disagreement-startups
-excerpt: 'The theory-based view of the firm emphasizes that entrepreneurs have polarizing beliefs – some
-stakeholders might share them and others reject them. The nature and extent of this disagreement
-influences a startup’s strategy and its path to success. This paper suggests a new measure of the
-divergence of opinions around a startup idea that I use to test this theoretical framework. Leveraging data
-from venture competitions, where different judges grade the same startup, I use the dispersion in their
-scores to build a measure of disagreement about a startup’s value proposition. I find that disagreement in
-scores is large and persistent. It reflects both differences in information (that is, disagreement that
-diminishes in later competition rounds) and “agreement to disagree” between judges with different
-viewpoints (for example, former entrepreneurs vs. venture capitalists). Such disagreement is
-disproportionately high (i) in R&D-intensive sectors, (ii) for startups with a granted patent, and (iii)
-around a startup’s strategy (as opposed to the quality of its team or product). I conclude that polarization
-is associated with some measures of future success – e.g., the amount of funding eventually raised and
-future sales. Despite this, polarizing businesses are not more likely to be acquired. Finally, I discuss the implications of this evidence for entrepreneurial strategy.'
+excerpt: 'I present a new, compelling finding: the more venture competition judges disagree about the quality of a startup, the more likely the startup is to succeed. To explain why, I build on the notion that (i)
+entrepreneurs pursue opportunities based on their subjective beliefs (ii) common opinion cannot be a
+source of competitive advantage. Therefore, value is disproportionately created and captured by founders
+with atypical ideas that spark disagreement, and potential investors should harness disagreement as a
+predictor of success. I leverage data from 67 venture competitions to show that the empirical implications
+of this theoretical framework are supported by the data, whereas alternative explanations (e.g., that judges
+disagree more about risky ventures) are not. Additionally, I provide insights into what evaluators tend to
+disagree more often (e.g., former entrepreneurs) and which aspects of a startup (e.g., business model) are
+most polarizing. This work has broad implications for investors and institutions that strive to evaluate the
+potential of startup ideas.'
 #date: 2010-10-01
 #venue: 'Journal 1'
 #slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
