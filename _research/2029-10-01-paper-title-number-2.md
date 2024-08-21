@@ -1,5 +1,5 @@
 ---
-title: "Disagreement Predicts Startup Success: Evidence from Venture Competitions <br> <br> <span style='font-weight: normal; font-style: italic;'>Revise and Resubmit, Strategy Science</span>"
+title: "Disagreement Predicts Startup Success: Evidence from Venture Competitions <br> <br> <span style='font-weight: normal; font-style: italic;'>Minor Revision requested, Strategy Science</span>"
 collection: publications
 permalink: /publication/disagreement-startups
 excerpt: 'I present a new, compelling finding: the more venture competition judges disagree about the quality of a startup, the more likely the startup is to succeed. To explain why, I build on the notion that (i)
@@ -15,7 +15,7 @@ potential of startup ideas.'
 #date: 2010-10-01
 #venue: 'Journal 1'
 #slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-#paperurl: 'http://lucagius.github.io/files/Disagreement_judges.pdf'
+paperurl: 'https://lucagius.github.io/files/Disagreement_judges.pdf'
 #citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
 ---
 
