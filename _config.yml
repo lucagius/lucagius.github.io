@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Luca's HomePage"
+title                    : ""
 title_separator          : "-"
 name                     : &name "Luca Gius"
 description              : &description "personal description"
@@ -24,11 +24,11 @@ author:
   avatar           : "avatar.jpg"
   name             : "Luca Gius"
   pronouns         : 
-  bio              : "PhD Candidate"
+  bio              : ""
   location         : 
-  employer         : "MIT Sloan (TIES)"
+  employer         : "Bocconi University"
   uri              : # URL
-  email            : "lgius[@]mit.edu" 
+  email            : "luca.gius[@]hotmail.it" 
 
   # Academic websites
   arxiv            : 
