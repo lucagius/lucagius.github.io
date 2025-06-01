@@ -1,0 +1,6 @@
+/* custom avatar size */
+.author__avatar img {
+  max-width: 140px;   /* any size you like */
+  height: auto;       /* preserves aspect ratio */
+  border-radius: 0%;
+}
