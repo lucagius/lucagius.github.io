@@ -92,10 +92,14 @@
   img {
     max-width: 175px;
     border-radius: 0%;
+    box-shadow: none;
+    outline: none;
 
     @include breakpoint($large) {
-      padding: 0;
-      border: 0;
+      padding: 0 !important;
+      border: 0 !important;
+      box-shadow: none !important;
+      outline: none !important;
     }
   }
 }
