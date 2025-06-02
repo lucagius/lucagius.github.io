@@ -7,7 +7,7 @@ hide_title: true
 ---
 
 <style>
-  /* hide the big “Research” banner inserted by the layout */
+  /* hide the big “Research” banner */
   .page__title { display: none; }
 
   /* 1) make paper titles blue */
@@ -21,25 +21,29 @@ hide_title: true
   .paper-abstract {
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
+    /* ensure the “Abstract:” prefix sits on the same line as the first sentence */
+    display: inline-block;
   }
-  
-  /* 2a) add “Abstract:” in bold at the start of the first <p> */
-  .paper-abstract p:first-child::before {
+
+  /* 2a) prepend “Abstract:” to every abstract container */
+  .paper-abstract::before {
     content: "Abstract: ";
     font-weight: bold;
   }
-  /* keep subtitles italic and spaced */
+
+  /* 3) make subtitles match the abstract’s font size */
   .paper-sub {
     margin: 0 0 0.5rem 0;
     font-style: italic;
     font-size: 0.9rem;
   }
 
-  /* space below PDF/DOI links */
+  /* 4) space below PDF/DOI links */
   .paper-links {
     margin: 0 0 1rem 0;
   }
 </style>
+
 
 {% comment %} --------  WORKING PAPERS -------- {% endcomment %}
 ## Working Papers
