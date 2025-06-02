@@ -16,9 +16,9 @@ redirect_from:
 
 <style>
   /* Enlarge the name shown under the avatar / hero photo */
-  .author__name {        /* sidebar name */
-    font-size: 2rem;     /* tweak value as you like */
-    margin-top: 1rem;    /* vertical gap below the picture */
+  .author__name {        
+    font-size: 1.333em;     
+    margin-top: 1.333em;    /* vertical gap below the picture */
   }
 </style>  
 Welcome!
