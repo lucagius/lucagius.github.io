@@ -4,6 +4,7 @@ main:
     url: /
   - title: "Research"
     url: research/
+    class: masthead__menu-item--lg
   #- title: "CV"
     #url: /cv/
   #  url: /files/Resume.pdf
