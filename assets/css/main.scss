@@ -39,3 +39,11 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+
+/* Enlarge the author name under the avatar everywhere */
+.author__name {
+  font-size: 1.5rem;    /* adjust to taste */
+  margin-top: 1rem;     /* space between picture and name */
+  margin-bottom: 1rem;  /* space between name and affiliation/bio */
+}
