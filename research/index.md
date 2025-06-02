@@ -19,10 +19,11 @@ hide_title: true
 
   /* 2) make venue line green */
   .paper-venue {
-    color: green;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-  }
+  color: green;
+  font-size: 0.9rem;
+  margin: 0 0 1rem 0;
+}
+
 
   /* 3) shrink the abstract text */
   .paper-abstract {
@@ -41,7 +42,7 @@ hide_title: true
 
   /* 4) make subtitles match the abstract’s font size */
   .paper-sub {
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.25rem 0;
     font-style: italic;
     font-size: 0.9rem;
   }
