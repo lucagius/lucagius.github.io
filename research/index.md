@@ -32,6 +32,7 @@ hide_title: true
   .paper-sub {
     margin: 0 0 0.5rem 0;
     font-style: italic;
+    font-size: 0.9rem;
   }
 
   /* space below PDF/DOI links */
