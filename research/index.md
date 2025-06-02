@@ -45,7 +45,7 @@ hide_title: true
 {% endfor %}
 
 {% comment %} --------  PUBLICATIONS -------- {% endcomment %}
-## Publications
+## Refereed Publications
 {% assign pubs = site.research | where:"category","publication" | sort:"year" | reverse %}
 {% for paper in pubs %}
 ### <span class="paper-title">{{ paper.title }}</span>
@@ -64,7 +64,7 @@ hide_title: true
 {% endfor %}
 
 {% comment %} --------  NON‑PEER‑REVIEWED -------- {% endcomment %}
-## Non‑peer‑reviewed Work
+## Other Publications
 {% assign misc = site.research | where:"category","non-peer-reviewed" | sort:"year" | reverse %}
 {% for paper in misc %}
 ### <span class="paper-title">{{ paper.title }}</span>
