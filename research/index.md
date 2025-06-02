@@ -43,8 +43,6 @@ hide_title: true
     margin: 0 0 1rem 0;
   }
 </style>
-
-
 {% comment %} --------  WORKING PAPERS -------- {% endcomment %}
 ## Working Papers
 {% assign wps = site.research | where:"category","working-paper" | sort:"year" | reverse %}
@@ -55,9 +53,9 @@ hide_title: true
 {% endif %}
 {% if paper.pdf or paper.doi %}
 <p class="paper-links">
-  {% if paper.pdf %}[PDF]({{ paper.pdf }}){% endif %}
+  {% if paper.pdf %}<a href="{{ paper.pdf }}" target="_blank">PDF</a>{% endif %}
   {% if paper.pdf and paper.doi %} | {% endif %}
-  {% if paper.doi %}[DOI]({{ paper.doi }}){% endif %}
+  {% if paper.doi %}<a href="{{ paper.doi }}" target="_blank">DOI</a>{% endif %}
 </p>
 {% endif %}
 
@@ -76,9 +74,9 @@ hide_title: true
 {% endif %}
 {% if paper.pdf or paper.doi %}
 <p class="paper-links">
-  {% if paper.pdf %}[PDF]({{ paper.pdf }}){% endif %}
+  {% if paper.pdf %}<a href="{{ paper.pdf }}" target="_blank">PDF</a>{% endif %}
   {% if paper.pdf and paper.doi %} | {% endif %}
-  {% if paper.doi %}[DOI]({{ paper.doi }}){% endif %}
+  {% if paper.doi %}<a href="{{ paper.doi }}" target="_blank">DOI</a>{% endif %}
 </p>
 {% endif %}
 
@@ -97,9 +95,9 @@ hide_title: true
 {% endif %}
 {% if paper.pdf or paper.doi %}
 <p class="paper-links">
-  {% if paper.pdf %}[PDF]({{ paper.pdf }}){% endif %}
+  {% if paper.pdf %}<a href="{{ paper.pdf }}" target="_blank">PDF</a>{% endif %}
   {% if paper.pdf and paper.doi %} | {% endif %}
-  {% if paper.doi %}[DOI]({{ paper.doi }}){% endif %}
+  {% if paper.doi %}<a href="{{ paper.doi }}" target="_blank">DOI</a>{% endif %}
 </p>
 {% endif %}
 
@@ -107,3 +105,4 @@ hide_title: true
   {{ paper.content }}
 </div>
 {% endfor %}
+
