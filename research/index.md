@@ -71,7 +71,6 @@ hide_title: true
     white-space: nowrap;
   }
 </style>
-
 {% comment %} --------  WORKING PAPERS -------- {% endcomment %}
 ## Working Papers
 {% assign wps = site.research | where:"category","working-paper" | sort:"year" | reverse %}
