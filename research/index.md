@@ -70,6 +70,9 @@ hide_title: true
     width: 1px;
     white-space: nowrap;
   }
+.page__content h2:first-of-type {
+  margin-top: 0 !important;
+}  
 </style>
 {% comment %} --------  WORKING PAPERS -------- {% endcomment %}
 ## Working Papers
