@@ -37,6 +37,50 @@
     margin-top: 1.5rem !important;    /* gap below photo   */
     margin-bottom: 1.5rem !important; /* gap above bio     */
   }
+
+  /* ──────────────────────────────────────────────────────
+     MOBILE‐ONLY OVERRIDES (max‐width: 768px)
+     These rules apply only on screens 768px wide or smaller
+  ────────────────────────────────────────────────────── */
+  @media screen and (max-width: 768px) {
+    /* 1) Hide the “Follow” button under the author‐profile */
+    .author__actions,
+    .author__follow {
+      display: none !important;
+    }
+
+    /* 2) Center the avatar and force a bigger square */
+    .author__avatar {
+      display: block !important;
+      margin: 0 auto 0.5rem auto; /* center image, 0.5rem bottom gap */
+      width: 100px !important;    /* force avatar to 100px wide */
+      height: 100px !important;   /* force avatar to 100px tall */
+      object-fit: cover;          /* crop/scale nicely */
+    }
+
+    /* Center the name below the avatar */
+    .author__name {
+      text-align: center !important;
+      font-size: 1.5rem !important;    /* enlarge on mobile */
+      margin-top: 0.5rem !important;   /* small gap above name */
+      margin-bottom: 0.5rem !important;/* small gap below name */
+    }
+
+    /* Center and resize affiliation/bio text */
+    .author__meta,
+    .author__bio {
+      text-align: center !important;
+      font-size: 1rem !important;      /* ~16px on most phones */
+      margin-bottom: 0.5rem !important;
+      line-height: 1.3 !important;     /* tighten a bit */
+    }
+
+    /* Ensure sidebar container is centered */
+    .sidebar {
+      display: block !important;
+      text-align: center !important;
+    }
+  }
 </style>
 
 
