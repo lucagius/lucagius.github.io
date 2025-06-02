@@ -37,80 +37,82 @@
     margin-bottom: 1.5rem !important;
   }
 
- @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
 
-  /* 0 ▸ ensure the whole author block is a centred column */
-  .author__profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    /* 0 ▸ ensure the whole author block is a centred column */
+    .author__profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-  /* 1 ▸ put the entire content block (name + bio/meta) first */
-  .author__content {
-    order: 1;
-    text-align: center;
-  }
+    /* 1 ▸ put the entire content block (name + bio/meta) first */
+    .author__content {
+      order: 1;
+      text-align: center;
+    }
 
-  /* 2 ▸ name below “content” (order:2), with extra gap after */
-  .author__name {
-    order: 2;
-    font-size: 1.75rem;
-    margin: 0 0 1rem 0;      /* ↑ increased from 0.5rem to 1rem */
-  }
+    /* 2 ▸ name below “content” (order:2), with extra gap after and horizontal margins */
+    .author__name {
+      order: 2;
+      font-size: 1.75rem;
+      margin: 0 1.5rem 1rem 1.5rem; /* top 0, right 1.5rem, bottom 1rem, left 1.5rem */
+      text-align: center;
+    }
 
-  /* 3 ▸ avatar next (order:3), with extra gap after */
-  .author__avatar {
-    order: 3;
-    display: block;
-    margin: 0 auto 1.5rem;   /* ↑ increased from 0.5rem to 1.5rem */
-    width: 140px;            /* unchanged */
-    height: auto;
-    object-fit: contain;
-    float: none;             /* remove default float */
-  }
-  .author__avatar img {
-    width: 100%;
-    height: auto;
-  }
+    /* 3 ▸ avatar next (order:3), with extra gap after */
+    .author__avatar {
+      order: 3;
+      display: block;
+      margin: 0 auto 1.5rem;   /* vertical gap below avatar */
+      width: 140px;            /* unchanged */
+      height: auto;
+      object-fit: contain;
+      float: none;             /* remove default float */
+    }
+    .author__avatar img {
+      width: 100%;
+      height: auto;
+    }
 
-  /* 4 ▸ affiliation/bio centred under avatar */
-  .author__meta,
-  .author__bio {
-    order: 4;
-    text-align: center;
-    font-size: 1rem;
-    margin-bottom: 1rem;     /* ↑ increased from 0.5rem to 1rem */
-  }
+    /* 4 ▸ affiliation/bio centred under avatar */
+    .author__meta,
+    .author__bio {
+      order: 4;
+      text-align: center;
+      font-size: 1rem;
+      margin: 0 1.5rem 1rem 1.5rem; /* horizontal margins, vertical gap below */
+    }
 
-  /* 5 ▸ “Contact Me” button last, with extra gap before main content */
-  .author__actions {
-    order: 5;
-    text-align: center;
-    margin: 1.5rem 0;        /* ↑ increased from 0.75rem to 1.5rem */
-  }
-  .author__actions .label {
-    display: none;           /* hide “Follow” text */
-  }
-  .author__actions a::before {
-    content: "Contact Me";
-  }
-  .author__actions a {
-    display: inline-block;
-    padding: 0.4rem 0.9rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background: #fafafa;
-    text-decoration: none;
-  }
+    /* 5 ▸ “Contact Me” button last, with extra gap before main content and horizontal margins */
+    .author__actions {
+      order: 5;
+      text-align: center;
+      margin: 1.5rem 0;        /* vertical gap above and below */
+    }
+    .author__actions .label {
+      display: none;           /* hide “Follow” text */
+    }
+    .author__actions a::before {
+      content: "Contact Me";
+    }
+    .author__actions a {
+      display: inline-block;
+      padding: 0.4rem 0.9rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #fafafa;
+      text-decoration: none;
+      margin: 0 1.5rem;       /* left/right margin around the button */
+    }
 
-  /* 6 ▸ push “about me” (page content) further down */
-  .page__content {
-    margin-top: 2rem;        /* adds space between “Contact Me” and main content */
+    /* 6 ▸ push “about me” (page content) further down */
+    .page__content {
+      margin-top: 2rem;        /* adds space between “Contact Me” and main content */
+    }
   }
-}
-
 </style>
+
 
 
 
