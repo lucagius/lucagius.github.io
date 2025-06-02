@@ -1,7 +1,8 @@
 ---
 title: Research
-layout: page        # uses the normal Minimal‑Mistakes “page” layout
+layout: single          # switch from page → single
 permalink: /research/
+author_profile: true    # extra‑safe; forces the sidebar on this page
 ---
 
 <style>
