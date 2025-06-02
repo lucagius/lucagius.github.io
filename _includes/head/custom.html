@@ -38,65 +38,71 @@
     margin: 1.5rem 0 !important;
   }
 
-  /* ———————————————————————————————
-     Mobile‑only overrides  (≤ 768 px)
-  ——————————————————————————————— */
+  /* ───────────────────────────────────────────────────
+     MOBILE-ONLY OVERRIDES  (screens ≤ 768px)
+  ─────────────────────────────────────────────────── */
   @media screen and (max-width: 768px) {
 
-    /* Make the whole profile a vertical, centred column */
-    .author__profile {
-      display: flex !important;
-      flex-direction: column !important;
-      align-items: center !important;
+    /* 1) Force author‐profile into a vertical, centred column */
+    aside.sidebar .author__profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    /* 1 ▸ block that holds NAME + bio/affiliation comes first */
-    .author__content {
-      order: 1 !important;
-      text-align: center !important;
+    /* 2) Ensure the name + any meta/bio appears first */
+    aside.sidebar .author__profile > .author__content {
+      order: 1;
+      width: 100%;
+      text-align: center;
     }
-    .author__name {
-      font-size: 1.75rem !important;
-      margin: 0 0 0.75rem 0 !important;  /* gap below name */
+    aside.sidebar .author__profile > .author__content > .author__name {
+      font-size: 1.75rem;
+      margin: 0 0 0.75rem 0;  /* gap below name */
     }
-    .author__meta,
-    .author__bio  {
-      font-size: 1rem !important;
-      margin: 0 0 0.75rem 0 !important;  /* gap below affiliation */
-    }
-
-    /* 2 ▸ AVATAR second — remove float, centre, enlarge */
-    .author__avatar {
-      order: 2 !important;
-      float: none !important;            /* cancel default float‑left */
-      margin: 0 auto 0.75rem auto !important;
-      width: 140px !important;
-    }
-    .author__avatar img {
-      width: 100% !important;
-      height: auto !important;
-      object-fit: contain !important;
+    aside.sidebar .author__profile > .author__content > .author__meta,
+    aside.sidebar .author__profile > .author__content > .author__bio {
+      font-size: 1rem;
+      margin: 0 0 0.75rem 0;  /* gap below affiliation */
     }
 
-    /* 3 ▸ “Contact Me” pill last */
-    .author__actions {
-      order: 3 !important;
-      text-align: center !important;
-      margin: 0.75rem 0 !important;
+    /* 3) Place avatar next, kill its float, centre and uncrop */
+    aside.sidebar .author__profile > figure.author__avatar {
+      order: 2;
+      float: none;                      /* override theme’s float */
+      margin: 0 auto 0.75rem auto;      /* vertical gap below avatar */
+      width: 140px;                     /* enlarge avatar */
+      max-width: 70%;                   /* ensure it doesn’t exceed narrow screen */
+      height: auto;
     }
-    .author__actions .label { display: none !important; } /* hide “Follow” text */
-    .author__actions a::before { content: "Contact Me"; }
-    .author__actions a {
-      display: inline-block !important;
-      padding: 0.45rem 1rem !important;
-      border: 1px solid #ccc !important;
-      border-radius: 4px !important;
-      background: #fafafa !important;
-      text-decoration: none !important;
+    aside.sidebar .author__profile > figure.author__avatar img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    /* 4) Finally, show the “Contact Me” button last */
+    aside.sidebar .author__profile > .author__actions {
+      order: 3;
+      text-align: center;
+      margin: 0.75rem 0;
+    }
+    aside.sidebar .author__profile > .author__actions .label {
+      display: none; /* hide default “Follow” text */
+    }
+    aside.sidebar .author__profile > .author__actions a::before {
+      content: "Contact Me";
+    }
+    aside.sidebar .author__profile > .author__actions a {
+      display: inline-block;
+      padding: 0.45rem 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #fafafa;
+      text-decoration: none;
     }
   }
 </style>
-
 
 
 
