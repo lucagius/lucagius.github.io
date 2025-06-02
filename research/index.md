@@ -17,7 +17,14 @@ hide_title: true
     cursor: default;
   }
 
-  /* 2) shrink the abstract text */
+  /* 2) make venue line green */
+  .paper-venue {
+    color: green;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* 3) shrink the abstract text */
   .paper-abstract {
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
@@ -25,24 +32,25 @@ hide_title: true
     display: inline-block;
   }
 
-  /* 2a) prepend “Abstract:” to every abstract container */
+  /* 3a) prepend “Abstract:” to every abstract container */
   .paper-abstract::before {
     content: "Abstract: ";
     font-weight: bold;
   }
 
-  /* 3) make subtitles match the abstract’s font size */
+  /* 4) make subtitles match the abstract’s font size */
   .paper-sub {
     margin: 0 0 0.5rem 0;
     font-style: italic;
     font-size: 0.9rem;
   }
 
-  /* 4) space below PDF/DOI links */
+  /* 5) space below PDF/DOI links */
   .paper-links {
     margin: 0 0 1rem 0;
   }
 </style>
+
 {% comment %} --------  WORKING PAPERS -------- {% endcomment %}
 ## Working Papers
 {% assign wps = site.research | where:"category","working-paper" | sort:"year" | reverse %}
@@ -50,6 +58,9 @@ hide_title: true
 ### <span class="paper-title">{{ paper.title }}</span>
 {% if paper.subtitle %}
 <p class="paper-sub">{{ paper.subtitle }}</p>
+{% endif %}
+{% if paper.venue %}
+<p class="paper-venue">{{ paper.venue }}</p>
 {% endif %}
 {% if paper.pdf or paper.doi %}
 <p class="paper-links">
@@ -72,6 +83,9 @@ hide_title: true
 {% if paper.subtitle %}
 <p class="paper-sub">{{ paper.subtitle }}</p>
 {% endif %}
+{% if paper.venue %}
+<p class="paper-venue">{{ paper.venue }}</p>
+{% endif %}
 {% if paper.pdf or paper.doi %}
 <p class="paper-links">
   {% if paper.pdf %}<a href="{{ paper.pdf }}" target="_blank">PDF</a>{% endif %}
@@ -93,6 +107,9 @@ hide_title: true
 {% if paper.subtitle %}
 <p class="paper-sub">{{ paper.subtitle }}</p>
 {% endif %}
+{% if paper.venue %}
+<p class="paper-venue">{{ paper.venue }}</p>
+{% endif %}
 {% if paper.pdf or paper.doi %}
 <p class="paper-links">
   {% if paper.pdf %}<a href="{{ paper.pdf }}" target="_blank">PDF</a>{% endif %}
@@ -105,4 +122,3 @@ hide_title: true
   {{ paper.content }}
 </div>
 {% endfor %}
-
