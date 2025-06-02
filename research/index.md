@@ -1,3 +1,4 @@
+```markdown
 ---
 title: Research
 layout: single
@@ -19,11 +20,10 @@ hide_title: true
 
   /* 2) make venue line green */
   .paper-venue {
-  color: green;
-  font-size: 0.9rem !important;
-  margin: 0 0 1rem 0;
-}
-
+    color: green;
+    font-size: 0.9rem !important;
+    margin: 0 0 1rem 0;
+  }
 
   /* 3) shrink the abstract text */
   .paper-abstract {
@@ -35,10 +35,9 @@ hide_title: true
 
   /* 3a) prepend “Abstract:” to every abstract container except indicated */
   .paper-abstract:not(.no-prefix)::before {
-  content: "Abstract: ";
-  font-weight: bold;
-}
-
+    content: "Abstract: ";
+    font-weight: bold;
+  }
 
   /* 4) make subtitles match the abstract’s font size */
   .paper-sub {
@@ -47,9 +46,30 @@ hide_title: true
     font-size: 0.9rem !important;
   }
 
-  /* 5) space below PDF/DOI links */
+  /* 5) space below PDF/DOI icon links */
   .paper-links {
     margin: 0 0 1rem 0;
+  }
+
+  /* 6) style the icon links */
+  .paper-link-icon i {
+    font-size: 0.9rem;
+    vertical-align: text-bottom;
+    margin-right: 0.25rem;
+    color: inherit;
+  }
+
+  /* hide visually-hidden text */
+  .visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
   }
 </style>
 
@@ -66,16 +86,25 @@ hide_title: true
 {% endif %}
 {% if paper.pdf or paper.doi %}
 <p class="paper-links">
-  {% if paper.pdf %}<a href="{{ paper.pdf }}" target="_blank">PDF</a>{% endif %}
+  {% if paper.pdf %}
+    <a href="{{ paper.pdf }}" target="_blank" class="paper-link-icon">
+      <i class="fas fa-file-pdf"></i>
+      <span class="visually-hidden">PDF</span>
+    </a>
+  {% endif %}
   {% if paper.pdf and paper.doi %} | {% endif %}
-  {% if paper.doi %}<a href="{{ paper.doi }}" target="_blank">DOI</a>{% endif %}
+  {% if paper.doi %}
+    <a href="{{ paper.doi }}" target="_blank" class="paper-link-icon">
+      <i class="fas fa-external-link-alt"></i>
+      <span class="visually-hidden">DOI</span>
+    </a>
+  {% endif %}
 </p>
 {% endif %}
 
 <div class="paper-abstract{% if paper.no_abstract_prefix %} no-prefix{% endif %}">
   {{ paper.content }}
 </div>
-
 {% endfor %}
 
 {% comment %} --------  PUBLICATIONS -------- {% endcomment %}
@@ -91,16 +120,25 @@ hide_title: true
 {% endif %}
 {% if paper.pdf or paper.doi %}
 <p class="paper-links">
-  {% if paper.pdf %}<a href="{{ paper.pdf }}" target="_blank">PDF</a>{% endif %}
+  {% if paper.pdf %}
+    <a href="{{ paper.pdf }}" target="_blank" class="paper-link-icon">
+      <i class="fas fa-file-pdf"></i>
+      <span class="visually-hidden">PDF</span>
+    </a>
+  {% endif %}
   {% if paper.pdf and paper.doi %} | {% endif %}
-  {% if paper.doi %}<a href="{{ paper.doi }}" target="_blank">DOI</a>{% endif %}
+  {% if paper.doi %}
+    <a href="{{ paper.doi }}" target="_blank" class="paper-link-icon">
+      <i class="fas fa-external-link-alt"></i>
+      <span class="visually-hidden">DOI</span>
+    </a>
+  {% endif %}
 </p>
 {% endif %}
 
 <div class="paper-abstract{% if paper.no_abstract_prefix %} no-prefix{% endif %}">
   {{ paper.content }}
 </div>
-
 {% endfor %}
 
 {% comment %} --------  NON-PEER-REVIEWED -------- {% endcomment %}
@@ -116,14 +154,24 @@ hide_title: true
 {% endif %}
 {% if paper.pdf or paper.doi %}
 <p class="paper-links">
-  {% if paper.pdf %}<a href="{{ paper.pdf }}" target="_blank">PDF</a>{% endif %}
+  {% if paper.pdf %}
+    <a href="{{ paper.pdf }}" target="_blank" class="paper-link-icon">
+      <i class="fas fa-file-pdf"></i>
+      <span class="visually-hidden">PDF</span>
+    </a>
+  {% endif %}
   {% if paper.pdf and paper.doi %} | {% endif %}
-  {% if paper.doi %}<a href="{{ paper.doi }}" target="_blank">DOI</a>{% endif %}
+  {% if paper.doi %}
+    <a href="{{ paper.doi }}" target="_blank" class="paper-link-icon">
+      <i class="fas fa-external-link-alt"></i>
+      <span class="visually-hidden">DOI</span>
+    </a>
+  {% endif %}
 </p>
 {% endif %}
 
 <div class="paper-abstract{% if paper.no_abstract_prefix %} no-prefix{% endif %}">
   {{ paper.content }}
 </div>
-
 {% endfor %}
+```
