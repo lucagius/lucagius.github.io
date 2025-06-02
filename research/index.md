@@ -3,9 +3,22 @@ title: Research
 layout: single          # switch from page → single
 permalink: /research/
 author_profile: true    # extra‑safe; forces the sidebar on this page
+hide_title: true
 ---
 
 <style>
+ /* make paper titles blue */
+  .paper-title {
+    color: blue;
+    text-decoration: none;
+    cursor: default;
+  }
+
+  /* shrink the abstract text a bit */
+  .paper-abstract {
+    font-size: 0.9rem;   /* adjust up/down to taste */
+    margin-bottom: 1.5rem;
+  } 
 /* show titles as plain text (no link, no underline) */
 .paper-title { color: inherit; text-decoration: none; cursor: default; }
 .paper-sub   { margin: 0 0 0.5rem 0; font-style: italic; }
