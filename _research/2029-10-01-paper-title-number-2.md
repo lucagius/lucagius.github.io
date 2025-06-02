@@ -4,7 +4,7 @@ category: publication
 year: 2024
 pdf: 'https://lucagius.github.io/files/Disagreement_judges.pdf'
 doi: https://doi.org/10.1287/stsc.2024.0169
-
+venue: "Forthcoming, <em>Strategy Science</em>."
 ---
 This paper examines the relationship between disagreement surrounding a startup proposition and its
 future success. I find that the more venture competition judges disagree on the quality of a startup, the
