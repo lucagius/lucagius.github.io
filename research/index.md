@@ -22,7 +22,12 @@ hide_title: true
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
   }
-
+  
+  /* 2a) add “Abstract:” in bold at the start of the first <p> */
+  .paper-abstract p:first-child::before {
+    content: "Abstract: ";
+    font-weight: bold;
+  }
   /* keep subtitles italic and spaced */
   .paper-sub {
     margin: 0 0 0.5rem 0;
