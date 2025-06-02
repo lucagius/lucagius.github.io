@@ -11,6 +11,8 @@ redirect_from:
 /* 1) Shrink the “About Me” <h1> from 1.25em down to 1.125em */
 .page__title {
   font-size: 1.333em;
+  margin-bottom: 1.5em;
+
 }
 </style>
 
@@ -21,8 +23,7 @@ redirect_from:
     margin-top: 1.333em;    /* vertical gap below the picture */
   }
 </style>  
-Welcome!
 
-I am a PhD candidate at MIT Sloan interested in the intersection of innovation, entrepreneurial strategy, and AI.
+Welcome! I am an incoming Assistant Professor at Bocconi University’s Management and Technology Department. My research focuses on innovation and entrepreneurial strategy, with a special interest in the commercialization of unconventional ideas and technologies.
 
-In my dissertation, I study how contrarian researchers leverage AI competitions to validate their ideas before commercialization.
+I received my PhD from [MIT Sloan](https://mitsloan.mit.edu/faculty/academic-groups/ties/about-us).
