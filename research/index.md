@@ -45,17 +45,17 @@ hide_title: true
     font-size: 0.9rem !important;
   }
 
-  /* 5) space below PDF/DOI icon links */
+  /* 5) space below PDF/DOI links */
   .paper-links {
     margin: 0 0 1rem 0;
   }
 
-  /* 6) style the icon links */
-  .paper-link-icon i {
-    font-size: 0.9rem;
-    vertical-align: text-bottom;
-    margin-right: 0.25rem;
-    color: inherit;
+  /* 6) style the icon links with a bit of horizontal spacing */
+  .paper-link-icon {
+    margin-right: 0.5rem; /* small gap between icons */
+  }
+  .paper-link-icon:last-child {
+    margin-right: 0;
   }
 
   /* hide visually-hidden text */
@@ -91,7 +91,6 @@ hide_title: true
       <span class="visually-hidden">PDF</span>
     </a>
   {% endif %}
-  {% if paper.pdf and paper.doi %} | {% endif %}
   {% if paper.doi %}
     <a href="{{ paper.doi }}" target="_blank" class="paper-link-icon">
       <i class="fas fa-external-link-alt"></i>
@@ -125,7 +124,6 @@ hide_title: true
       <span class="visually-hidden">PDF</span>
     </a>
   {% endif %}
-  {% if paper.pdf and paper.doi %} | {% endif %}
   {% if paper.doi %}
     <a href="{{ paper.doi }}" target="_blank" class="paper-link-icon">
       <i class="fas fa-external-link-alt"></i>
@@ -159,7 +157,6 @@ hide_title: true
       <span class="visually-hidden">PDF</span>
     </a>
   {% endif %}
-  {% if paper.pdf and paper.doi %} | {% endif %}
   {% if paper.doi %}
     <a href="{{ paper.doi }}" target="_blank" class="paper-link-icon">
       <i class="fas fa-external-link-alt"></i>
