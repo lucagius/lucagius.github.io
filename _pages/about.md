@@ -13,7 +13,14 @@ redirect_from:
   font-size: 1.333em;
 }
 </style>
-  
+
+<style>
+  /* Enlarge the name shown under the avatar / hero photo */
+  .author__name {        /* sidebar name */
+    font-size: 2rem;     /* tweak value as you like */
+    margin-top: 1rem;    /* vertical gap below the picture */
+  }
+</style>  
 Welcome!
 
 I am a PhD candidate at MIT Sloan interested in the intersection of innovation, entrepreneurial strategy, and AI.
