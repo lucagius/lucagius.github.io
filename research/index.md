@@ -20,7 +20,7 @@ hide_title: true
   /* 2) make venue line green */
   .paper-venue {
   color: green;
-  font-size: 0.9rem;
+  font-size: 0.9rem !important;
   margin: 0 0 1rem 0;
 }
 
@@ -42,9 +42,9 @@ hide_title: true
 
   /* 4) make subtitles match the abstract’s font size */
   .paper-sub {
-    margin: 0 0 0.25rem 0;
+    margin: 0 0 0.25rem 0 !important;
     font-style: italic;
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
   }
 
   /* 5) space below PDF/DOI links */
