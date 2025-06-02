@@ -39,3 +39,20 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+.site-nav__links li {
+  margin: 0 0.75rem;  /* 0 top/bottom, 0.75rem left/right */
+}
+
+/* 2. (Optional) Increase clickable area via anchor padding */
+.site-nav__links li a {
+  padding: 0.5rem 1rem;  /* 0.5rem top/bottom, 1rem left/right */
+}
+
+/* 3. (Optional) If your theme uses a different class name: */
+.nav-links li {
+  margin: 0 0.75rem;
+}
+.nav-links li a {
+  padding: 0.5rem 1rem;
+}
