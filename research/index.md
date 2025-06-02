@@ -32,11 +32,12 @@ hide_title: true
     display: inline-block;
   }
 
-  /* 3a) prepend “Abstract:” to every abstract container */
-  .paper-abstract::before {
-    content: "Abstract: ";
-    font-weight: bold;
-  }
+  /* 3a) prepend “Abstract:” to every abstract container except indicated */
+  .paper-abstract:not(.no-prefix)::before {
+  content: "Abstract: ";
+  font-weight: bold;
+}
+
 
   /* 4) make subtitles match the abstract’s font size */
   .paper-sub {
