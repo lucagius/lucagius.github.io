@@ -30,7 +30,7 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-  /* desktop / global — still enlarge name a bit */
+  /* desktop / global — still enlarge name a bit */
   .author__name {
     font-size: 1.333rem !important;
     margin-top: 1.5rem !important;
@@ -38,43 +38,69 @@
   }
 
   /* ───────────────────────────────────────────────
-     MOBILE‑ONLY overrides  (≤ 768 px)
+     MOBILE-ONLY overrides  (≤ 768 px)
   ─────────────────────────────────────────────── */
   @media screen and (max-width: 768px) {
 
-    /* 0 ▸ ensure the whole author block is flex‑column */
-    .author__profile { display:flex; flex-direction:column; align-items:center; }
+    /* 0 ▸ ensure the whole author block is flex-column */
+    .author__profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-    /* 1 ▸ order: name first, picture second */
-    .author__name   { order:1; text-align:center !important;
-                      font-size:1.75rem !important;
-                      margin:0 0 0.5rem 0 !important; }
+    /* 1 ▸ put the entire content block (name + bio/meta) first */
+    .author__content {
+      order: 1;
+    }
 
-    .author__avatar { order:2; display:block !important;
-                      margin:0 auto 0.5rem auto;
-                      width:140px !important;     /* enlarge */
-                      height:auto !important;     /* uncropped */
-                      object-fit:contain; }
+    /* 2 ▸ order: name second (inside content), avatar third */
+    .author__name {
+      order: 2;
+      text-align: center !important;
+      font-size: 1.75rem !important;
+      margin: 0 0 0.5rem 0 !important;
+    }
 
-    /* 2 ▸ centred affiliation/bio */
+    .author__avatar {
+      order: 3;
+      display: block !important;
+      margin: 0 auto 0.5rem auto;
+      width: 140px !important;   /* enlarge */
+      height: auto !important;   /* uncropped */
+      object-fit: contain;
+    }
+
+    /* 3 ▸ centred affiliation/bio */
     .author__meta,
-    .author__bio    { order:3; text-align:center !important;
-                      font-size:1rem !important;
-                      margin-bottom:0.5rem !important; }
+    .author__bio {
+      order: 4;
+      text-align: center !important;
+      font-size: 1rem !important;
+      margin-bottom: 0.5rem !important;
+    }
 
-    /* 3 ▸ “Contact Me” button replaces old Follow pill */
-    .author__actions { order:4; display:block; text-align:center; margin:0.75rem 0; }
-
-    .author__actions .label { display:none; }          /* hide “Follow” text */
-    .author__actions a::before { content:"Contact Me"; }
-
-    .author__actions a { display:inline-block;
-                         padding:0.4rem 0.9rem;
-                         border:1px solid #ccc;
-                         border-radius:4px;
-                         background:#fafafa;
-                         text-decoration:none; }
-
+    /* 4 ▸ “Contact Me” button replaces old Follow pill */
+    .author__actions {
+      order: 5;
+      display: block;
+      text-align: center;
+      margin: 0.75rem 0;
+    }
+    .author__actions .label {
+      display: none;            /* hide “Follow” text */
+    }
+    .author__actions a::before {
+      content: "Contact Me";     /* inject new label */
+    }
+    .author__actions a {
+      display: inline-block;
+      padding: 0.4rem 0.9rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #fafafa;
+      text-decoration: none;
+    }
   }
 </style>
 
