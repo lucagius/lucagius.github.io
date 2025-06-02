@@ -30,65 +30,71 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-  /* desktop / global — still enlarge name a bit */
+  /* ———————————————————————————————
+     Desktop / global
+  ——————————————————————————————— */
   .author__name {
     font-size: 1.333rem !important;
-    margin-top: 1.5rem !important;
-    margin-bottom: 1.5rem !important;
+    margin: 1.5rem 0 !important;
   }
 
- /* ─────────────────────  MOBILE (≤ 768 px) ─────────────────── */
-@media screen and (max-width: 768px) {
+  /* ———————————————————————————————
+     Mobile‑only overrides  (≤ 768 px)
+  ——————————————————————————————— */
+  @media screen and (max-width: 768px) {
 
-  /* Make the profile a simple vertical flex‑column */
-  .author__profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    /* Make the whole profile a vertical, centred column */
+    .author__profile {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+    }
 
-  /* 1 ─ Name first */
-  .author__name {
-    font-size: 1.75rem !important;
-    text-align: center !important;
-    margin: 0 0 0.75rem 0 !important;   /* gap below name */
-  }
+    /* 1 ▸ block that holds NAME + bio/affiliation comes first */
+    .author__content {
+      order: 1 !important;
+      text-align: center !important;
+    }
+    .author__name {
+      font-size: 1.75rem !important;
+      margin: 0 0 0.75rem 0 !important;  /* gap below name */
+    }
+    .author__meta,
+    .author__bio  {
+      font-size: 1rem !important;
+      margin: 0 0 0.75rem 0 !important;  /* gap below affiliation */
+    }
 
-  /* 2 ─ Avatar next, stop the left‑float */
-  .author__avatar {
-    float: none !important;             /* kill default float */
-    margin: 0 auto 0.75rem auto;        /* vertical gap below */
-    width: 140px !important;            /* enlarge */
-  }
-  .author__avatar img {
-    width: 100%; height: auto; object-fit: contain;
-  }
+    /* 2 ▸ AVATAR second — remove float, centre, enlarge */
+    .author__avatar {
+      order: 2 !important;
+      float: none !important;            /* cancel default float‑left */
+      margin: 0 auto 0.75rem auto !important;
+      width: 140px !important;
+    }
+    .author__avatar img {
+      width: 100% !important;
+      height: auto !important;
+      object-fit: contain !important;
+    }
 
-  /* 3 ─ Affiliation/bio centred under avatar */
-  .author__meta,
-  .author__bio {
-    text-align: center !important;
-    font-size: 1rem !important;
-    margin-bottom: 0.75rem !important;
+    /* 3 ▸ “Contact Me” pill last */
+    .author__actions {
+      order: 3 !important;
+      text-align: center !important;
+      margin: 0.75rem 0 !important;
+    }
+    .author__actions .label { display: none !important; } /* hide “Follow” text */
+    .author__actions a::before { content: "Contact Me"; }
+    .author__actions a {
+      display: inline-block !important;
+      padding: 0.45rem 1rem !important;
+      border: 1px solid #ccc !important;
+      border-radius: 4px !important;
+      background: #fafafa !important;
+      text-decoration: none !important;
+    }
   }
-
-  /* 4 ─ Turn “Follow” pill into centred “Contact Me” button */
-  .author__actions {
-    text-align: center !important;
-    margin: 0.75rem 0;
-  }
-  .author__actions .label { display: none; }      /* hide original text */
-  .author__actions a::before { content: "Contact Me"; }
-  .author__actions a {
-    display: inline-block;
-    padding: 0.45rem 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background: #fafafa;
-    text-decoration: none;
-  }
-}
-
 </style>
 
 
