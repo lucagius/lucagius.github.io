@@ -12,8 +12,6 @@ author_profile: true    # extra‑safe; forces the sidebar on this page
 .paper-links { margin: 0 0 1rem 0; }
 </style>
 
-# Research
-
 {% comment %} --------  WORKING PAPERS -------- {% endcomment %}
 ## Working Papers
 {% assign wps = site.research | where:"category","working-paper" | sort:"year" | reverse %}
