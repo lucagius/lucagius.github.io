@@ -7,22 +7,18 @@ hide_title: true
 ---
 
 <style>
- /* make paper titles blue */
-  .paper-title {
-    color: blue;
-    text-decoration: none;
-    cursor: default;
-  }
+/* 0) hide the big “Research” banner inserted by the layout */
+.page__title { display: none; }
 
-  /* shrink the abstract text a bit */
-  .paper-abstract {
-    font-size: 0.9rem;   /* adjust up/down to taste */
-    margin-bottom: 1.5rem;
-  } 
-/* show titles as plain text (no link, no underline) */
-.paper-title { color: inherit; text-decoration: none; cursor: default; }
-.paper-sub   { margin: 0 0 0.5rem 0; font-style: italic; }
-.paper-links { margin: 0 0 1rem 0; }
+/* 1) make titles blue */
+.paper-title { color:#0066cc; text-decoration:none; cursor:default; }
+
+/* 2) shrink the abstract text a bit */
+.paper-abstract { font-size:0.9rem; margin-bottom:1.5rem; }
+
+/* keep subtitle and link spacing tidy */
+.paper-sub   { margin:0 0 0.5rem 0; font-style:italic; }
+.paper-links { margin:0 0 1rem 0; }
 </style>
 
 {% comment %} --------  WORKING PAPERS -------- {% endcomment %}
