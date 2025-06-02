@@ -72,9 +72,10 @@ hide_title: true
 </p>
 {% endif %}
 
-<div class="paper-abstract">
+<div class="paper-abstract{% if paper.no_abstract_prefix %} no-prefix{% endif %}">
   {{ paper.content }}
 </div>
+
 {% endfor %}
 
 {% comment %} --------  PUBLICATIONS -------- {% endcomment %}
@@ -96,9 +97,10 @@ hide_title: true
 </p>
 {% endif %}
 
-<div class="paper-abstract">
+<div class="paper-abstract{% if paper.no_abstract_prefix %} no-prefix{% endif %}">
   {{ paper.content }}
 </div>
+
 {% endfor %}
 
 {% comment %} --------  NON-PEER-REVIEWED -------- {% endcomment %}
@@ -120,7 +122,8 @@ hide_title: true
 </p>
 {% endif %}
 
-<div class="paper-abstract">
+<div class="paper-abstract{% if paper.no_abstract_prefix %} no-prefix{% endif %}">
   {{ paper.content }}
 </div>
+
 {% endfor %}
