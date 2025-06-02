@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Research
 layout: single
@@ -174,4 +173,3 @@ hide_title: true
   {{ paper.content }}
 </div>
 {% endfor %}
-```
