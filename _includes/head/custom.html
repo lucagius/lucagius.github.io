@@ -42,29 +42,59 @@
   ─────────────────────────────────────────────── */
   @media screen and (max-width: 768px) {
 
-    .author__profile { display:flex; flex-direction:column; align-items:center; }
-
-    /* 1 ▸ put name + meta first */
-    .author__name,
-    .author__meta,
-    .author__bio     { order:1; text-align:center !important; }
-    .author__name    { font-size:1.75rem !important; margin:0 0 0.5rem 0 !important; }
-    .author__meta,
-    .author__bio     { font-size:1rem !important; margin-bottom:0.5rem !important; }
-
-    /* 2 ▸ avatar second */
-    .author__avatar  { order:2; margin:0 auto 0.5rem auto;
-                       width:140px !important; height:auto !important;
-                       object-fit:contain; }
-
-    /* 3 ▸ “Contact Me” pill third */
-    .author__actions { order:3; text-align:center; margin:0.75rem 0; }
-    .author__actions .label { display:none; }
-    .author__actions a::before { content:"Contact Me"; }
-    .author__actions a { display:inline-block; padding:0.4rem 0.9rem;
-                         border:1px solid #ccc; border-radius:4px;
-                         background:#fafafa; text-decoration:none; }
+  /* column layout, everything centred */
+  .author__profile  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  /* 1 ▸ name at the top */
+  .author__name     {
+    order: 1;
+    font-size: 1.75rem !important;
+    text-align: center !important;
+    margin: 0 0 0.75rem 0 !important;   /* space below name */
+  }
+
+  /* 2 ▸ avatar next, centred, no float */
+  .author__avatar   {
+    order: 2;
+    float: none !important;             /* kill default float‑left */
+    margin: 0 auto 0.75rem auto;        /* vertical space below */
+    width: 140px !important;
+    height: auto !important;
+  }
+  .author__avatar img {
+    width: 100%; height: auto; object-fit: contain;
+  }
+
+  /* 3 ▸ “Contact Me” pill last, centred */
+  .author__actions  {
+    order: 3;
+    text-align: center;
+    margin: 0.75rem 0;
+  }
+  .author__actions .label { display: none; }       /* hide original text   */
+  .author__actions a::before { content: "Contact Me"; }
+  .author__actions a {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fafafa;
+    text-decoration: none;
+  }
+
+  /* (optional) affiliation/bio centred under name */
+  .author__meta,
+  .author__bio {
+    order: 1;                         /* stay just under the name */
+    text-align: center !important;
+    font-size: 1rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+}
 </style>
 
 
