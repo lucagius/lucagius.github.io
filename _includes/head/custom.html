@@ -11,7 +11,7 @@
 <link rel="apple-touch-icon" sizes="144x144" href="{{ base_path }}/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
 <link rel="apple-touch-icon" sizes="152x152" href="{{ base_path }}/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
-<link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/pnga" href="{{ base_path }}/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
 <link rel="icon" type="image/png" href="{{ base_path }}/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
@@ -30,72 +30,72 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-  /* ———————————————————————————————
-     Desktop / global
-  ——————————————————————————————— */
+  /* desktop / global — still enlarge name a bit */
   .author__name {
     font-size: 1.333rem !important;
-    margin: 1.5rem 0 !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
   }
 
-  /* ───────────────────────────────────────────────────
-     MOBILE-ONLY OVERRIDES  (screens ≤ 768px)
-  ─────────────────────────────────────────────────── */
+  /* ───────────────────────────────────────────────
+     MOBILE-ONLY overrides  (≤ 768 px)
+  ─────────────────────────────────────────────── */
   @media screen and (max-width: 768px) {
 
-    /* 1) Force author‐profile into a vertical, centred column */
-    aside.sidebar .author__profile {
+    /* 0 ▸ ensure the whole author block is flex-column */
+    .author__profile {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
-    /* 2) Ensure the name + any meta/bio appears first */
-    aside.sidebar .author__profile > .author__content {
+    /* 1 ▸ put the entire content block (name + bio/meta) first */
+    .author__content {
       order: 1;
-      width: 100%;
-      text-align: center;
-    }
-    aside.sidebar .author__profile > .author__content > .author__name {
-      font-size: 1.75rem;
-      margin: 0 0 0.75rem 0;  /* gap below name */
-    }
-    aside.sidebar .author__profile > .author__content > .author__meta,
-    aside.sidebar .author__profile > .author__content > .author__bio {
-      font-size: 1rem;
-      margin: 0 0 0.75rem 0;  /* gap below affiliation */
     }
 
-    /* 3) Place avatar next, kill its float, centre and uncrop */
-    aside.sidebar .author__profile > figure.author__avatar {
+    /* 2 ▸ order: name second (inside content), avatar third */
+    .author__name {
       order: 2;
-      float: none;                      /* override theme’s float */
-      margin: 0 auto 0.75rem auto;      /* vertical gap below avatar */
-      width: 140px;                     /* enlarge avatar */
-      max-width: 70%;                   /* ensure it doesn’t exceed narrow screen */
-      height: auto;
+      text-align: center !important;
+      font-size: 1.75rem !important;
+      margin: 0 0 0.5rem 0 !important;
     }
-    aside.sidebar .author__profile > figure.author__avatar img {
-      width: 100%;
-      height: auto;
+
+    .author__avatar {
+      order: 3;
+      display: block !important;
+      margin: 0 auto 0.5rem auto;
+      width: 140px !important;   /* enlarge */
+      height: auto !important;   /* uncropped */
       object-fit: contain;
     }
 
-    /* 4) Finally, show the “Contact Me” button last */
-    aside.sidebar .author__profile > .author__actions {
-      order: 3;
+    /* 3 ▸ centred affiliation/bio */
+    .author__meta,
+    .author__bio {
+      order: 4;
+      text-align: center !important;
+      font-size: 1rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+
+    /* 4 ▸ “Contact Me” button replaces old Follow pill */
+    .author__actions {
+      order: 5;
+      display: block;
       text-align: center;
       margin: 0.75rem 0;
     }
-    aside.sidebar .author__profile > .author__actions .label {
-      display: none; /* hide default “Follow” text */
+    .author__actions .label {
+      display: none;            /* hide “Follow” text */
     }
-    aside.sidebar .author__profile > .author__actions a::before {
-      content: "Contact Me";
+    .author__actions a::before {
+      content: "Contact Me";     /* inject new label */
     }
-    aside.sidebar .author__profile > .author__actions a {
+    .author__actions a {
       display: inline-block;
-      padding: 0.45rem 1rem;
+      padding: 0.4rem 0.9rem;
       border: 1px solid #ccc;
       border-radius: 4px;
       background: #fafafa;
