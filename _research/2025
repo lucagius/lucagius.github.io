@@ -1,20 +1,10 @@
 ---
-title: "Are Female Inventors Geographically Constrained? Gender Differences in Team Collocation <br> <br> <span style='font-weight: normal; font-style: italic;'>Coauthored with Mercedes Delgado</span>"
-collection: publications
-permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: "We present a new, stylized fact: female inventors are more likely to be collocated with 
-their co-inventors compared to men. We interpret this correlation as suggestive evidence that women inventors face higher 
-geographical frictions, potentially due to family obligations. This is a concerning possibility, given that 50% of all team patents in 2020 was
-produced by multi-located teams, and is particularly relevant for the work-from-anywhere debate.
-In support of our interpretation, we find that the collocation gender gap exists for both new and 
-experienced inventors. The collocation gap increases with age: women are less collocated than men 
-when they are statistically less likely to have children (under 32), but become more collocated
-past this threshold. Men, instead, become consistently less collocated as they age.
-Preliminary evidence suggests that women who worked on multi-location patents early 
-in their careers stop patenting earlier. To conclude, the gap (and the gendered geographical frictions it might represent) is mitigated in top technology clusters
-where teams are typically more collocated."
-# date: 2024-02-17
-# venue: 'GitHub Journal of Bugs'
-# paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-# citation: 'Your Name, You. (2024). "Paper Title Number 3." <i>GitHub Journal of Bugs</i>. 1(3).'
+title: "Are Female Inventors Geographically Constrained? Gender Differences in Team Collocation"
+subtitle: "Co‑authored with Mercedes Delgado"
+category: working-paper        # or publication / non-peer-reviewed
+year: 2025                     # used only for ordering
+pdf:  /files/Female_Inventors_Collocation.pdf   # optional
+doi:  https://doi.org/10.1234/female‑inventors   # optional
 ---
+
+We present a new, stylized fact: female inventors are more likely to be collocated with their co‑inventors compared to men. …
