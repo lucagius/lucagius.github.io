@@ -37,64 +37,58 @@
     margin-bottom: 1.5rem !important;
   }
 
-  /* ───────────────────────────────────────────────
-     MOBILE‑ONLY overrides  (≤ 768 px)
-  ─────────────────────────────────────────────── */
-  @media screen and (max-width: 768px) {
+ /* ─────────────────────  MOBILE (≤ 768 px) ─────────────────── */
+@media screen and (max-width: 768px) {
 
-  /* column layout, everything centred */
-  .author__profile  {
+  /* Make the profile a simple vertical flex‑column */
+  .author__profile {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  /* 1 ▸ name at the top */
-  .author__name     {
-    order: 1;
+  /* 1 ─ Name first */
+  .author__name {
     font-size: 1.75rem !important;
     text-align: center !important;
-    margin: 0 0 0.75rem 0 !important;   /* space below name */
+    margin: 0 0 0.75rem 0 !important;   /* gap below name */
   }
 
-  /* 2 ▸ avatar next, centred, no float */
-  .author__avatar   {
-    order: 2;
-    float: none !important;             /* kill default float‑left */
-    margin: 0 auto 0.75rem auto;        /* vertical space below */
-    width: 140px !important;
-    height: auto !important;
+  /* 2 ─ Avatar next, stop the left‑float */
+  .author__avatar {
+    float: none !important;             /* kill default float */
+    margin: 0 auto 0.75rem auto;        /* vertical gap below */
+    width: 140px !important;            /* enlarge */
   }
   .author__avatar img {
     width: 100%; height: auto; object-fit: contain;
   }
 
-  /* 3 ▸ “Contact Me” pill last, centred */
-  .author__actions  {
-    order: 3;
-    text-align: center;
+  /* 3 ─ Affiliation/bio centred under avatar */
+  .author__meta,
+  .author__bio {
+    text-align: center !important;
+    font-size: 1rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  /* 4 ─ Turn “Follow” pill into centred “Contact Me” button */
+  .author__actions {
+    text-align: center !important;
     margin: 0.75rem 0;
   }
-  .author__actions .label { display: none; }       /* hide original text   */
+  .author__actions .label { display: none; }      /* hide original text */
   .author__actions a::before { content: "Contact Me"; }
   .author__actions a {
     display: inline-block;
-    padding: 0.4rem 0.9rem;
+    padding: 0.45rem 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     background: #fafafa;
     text-decoration: none;
   }
-
-  /* (optional) affiliation/bio centred under name */
-  .author__meta,
-  .author__bio {
-    order: 1;                         /* stay just under the name */
-    text-align: center !important;
-    font-size: 1rem !important;
-    margin-bottom: 0.75rem !important;
-  }
 }
+
 </style>
 
 
